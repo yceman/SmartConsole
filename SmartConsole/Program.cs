@@ -1,6 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SmartConsole.Models;
-Console.WriteLine("Hello, World!");
+
+Console.WriteLine("------------------------------------------------------------------");
+Console.WriteLine("░▒█▀▀▀█░█▀▄▀█░█▀▀▄░█▀▀▄░▀█▀░▒█▀▀▄░▄▀▀▄░█▀▀▄░█▀▀░▄▀▀▄░█░░█▀▀\r\n░░▀▀▀▄▄░█░▀░█░█▄▄█░█▄▄▀░░█░░▒█░░░░█░░█░█░▒█░▀▀▄░█░░█░█░░█▀▀\r\n░▒█▄▄▄█░▀░░▒▀░▀░░▀░▀░▀▀░░▀░░▒█▄▄▀░░▀▀░░▀░░▀░▀▀▀░░▀▀░░▀▀░▀▀▀\r\n");
+Console.WriteLine("------------------------------------------------------------------");
+Console.WriteLine("Welcome to the Smart Console!");
+Console.WriteLine("This console allows you to interact with different smartphone models and their features.");
+Console.WriteLine("You can create instances of smartphones, display their information, and use various features.");
+Console.WriteLine("--------------------------------");
+Console.WriteLine("\n");
+Console.WriteLine("--------------------------------");
+Console.WriteLine("░▀█▀░▄▀▀▄░█░░░░▄▀▀▄░█▀▀▄░█▀▀\r\n░▒█░░█▄▄█░█▀▀█░█░░█░█░▒█░█▀▀\r\n░▄█▄░█░░░░▀░░▀░░▀▀░░▀░░▀░▀▀▀\r\n");
+Console.WriteLine("--------------------------------");
 Iphone iphone = new Iphone("Apple", "iPhone 14", "123-456-7890", "123456789012345", "A2649", 128, 6, "iOS 16");
 iphone.DisplayInfo();
 iphone.Call("987-654-3210");
@@ -16,6 +27,8 @@ iphone.UseAppleMaps("Central Park");
 iphone.UseAppStore("Twitter");
 
 Console.WriteLine("\n");
+Console.WriteLine("--------------------------------");
+Console.WriteLine("░▒█▄░▒█░▄▀▀▄░█░▄░░▀░░█▀▀▄\r\n░▒█▒█▒█░█░░█░█▀▄░░█▀░█▄▄█\r\n░▒█░░▀█░░▀▀░░▀░▀░▀▀▀░▀░░▀\r\n");
 Console.WriteLine("--------------------------------");
 Nokia nokia = new Nokia("Nokia", "Nokia G50", "123-456-7890", "123456789012345", "G50", 64, 4, "Android 11");
 nokia.DisplayInfo();
@@ -33,5 +46,4 @@ nokia.UseNokiaMapsOffline("Statue of Liberty");
 nokia.InstallApp("WhatsApp");
 nokia.BrowseInternet("https://www.nokia.com");
 nokia.TakePhoto();
-Console.WriteLine("\n");
 Console.WriteLine("--------------------------------");

@@ -1,2 +1,37 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using SmartConsole.Models;
 Console.WriteLine("Hello, World!");
+Iphone iphone = new Iphone("Apple", "iPhone 14", "123-456-7890", "123456789012345", "A2649", 128, 6, "iOS 16");
+iphone.DisplayInfo();
+iphone.Call("987-654-3210");
+iphone.SendMessage("987-654-3210", "Hello from iPhone!");
+iphone.FaceTime("987-654-3210");
+iphone.UseSiri("set a reminder");
+iphone.UseApplePay("$10.00");
+iphone.UseAirDrop("photo.jpg");
+iphone.UseFindMyIphone();
+iphone.UseIcloud();
+iphone.UseAppleMusic("Shape of You");
+iphone.UseAppleMaps("Central Park");
+iphone.UseAppStore("Twitter");
+
+Console.WriteLine("\n");
+Console.WriteLine("--------------------------------");
+Nokia nokia = new Nokia("Nokia", "Nokia G50", "123-456-7890", "123456789012345", "G50", 64, 4, "Android 11");
+nokia.DisplayInfo();
+nokia.Call("987-654-3210");
+nokia.SendMessage("987-654-3210", "Hello from Nokia!");
+nokia.UseNokiaMaps("Eiffel Tower");
+nokia.UseNokiaMusic("Imagine");
+nokia.UseNokiaStore("Facebook");
+nokia.UseNokiaAssistant("set an alarm");
+nokia.UseNokiaCamera();
+nokia.UseNokiaPay("$5.00");
+nokia.UseNokiaFindMyPhone();
+nokia.UseNokiaCloud();
+nokia.UseNokiaMapsOffline("Statue of Liberty");
+nokia.InstallApp("WhatsApp");
+nokia.BrowseInternet("https://www.nokia.com");
+nokia.TakePhoto();
+Console.WriteLine("\n");
+Console.WriteLine("--------------------------------");
